@@ -5,7 +5,7 @@
   - name: install apache
     apt: name=apache2
   - name: write web page
-    template: src=index.html.j2 dest=/var/www/html/index.html
+    template: src=templates/index.html.j2 dest=/var/www/html/index.html
     notify:
     - restart apache
   - name: ensure apache is running (and enable it at boot)
