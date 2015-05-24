@@ -21,6 +21,7 @@ can run equivalent commands or more sophisticated playbooks.
 * `ansible.cfg`: Ansible configuration, including reference to local SSH config.
 * `hosts`: Ansible inventory file listing three Vagrant hosts in the "webservers" group.
 * `webserver.yml`: Ansible playbook for installing and configuring a web server on each host.
+* `templates/`: Contains [Jinja2](http://jinja.pocoo.org/) templates used by Ansible playbooks.
 * `demo.sh`: Creates servers, runs standard bash commands, then demonstrates Ansible.
 
 ## Prerequisites
