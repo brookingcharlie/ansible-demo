@@ -31,5 +31,8 @@ for host in ansible-{1..3}; do
   curl http://${host}/
 done
 
-log "Destroy vagrant environment"
-vagrant destroy -f
+log "Destroy vagrant environment? [y/N]"
+read LINE
+if [ "$LINE" = "y" -o "$LINE" = "Y" ]; then
+  vagrant destroy -f
+fi
