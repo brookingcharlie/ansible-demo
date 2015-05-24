@@ -1,7 +1,7 @@
 # Ansible demo
 
 Demonstrates basics of [Ansible](http://www.ansible.com/),
-including inventory, modules, and playbooks.
+including inventory, commands, modules, and playbooks.
 
 [Vagrant](https://www.vagrantup.com/) is used to create a
 [multi-machine environment](http://docs.vagrantup.com/v2/multi-machine/index.html)

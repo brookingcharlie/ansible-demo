@@ -10,10 +10,13 @@ log()
 log "Start and provision vagrant environment"
 vagrant up
 
-log "Use SSH to show hostnames and IP addresses"
+log "Show IP addresses using bash and ssh"
 for host in ansible-{1..3}; do
   ssh -F ssh_config ${host} -- 'echo $(hostname): $(hostname -I)'
 done
+
+log "Show IP addresses using ansible inventory and shell command"
+ansible all -i hosts -m shell -a 'echo $(hostname): $(hostname -I)'
 
 log "Ping hosts using standard bash commands"
 for host in ansible-{1..3}; do
