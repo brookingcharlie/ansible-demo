@@ -3,6 +3,14 @@ User vagrant
 UserKnownHostsFile /dev/null
 StrictHostKeyChecking no
 PasswordAuthentication no
-IdentityFile ~/.vagrant.d/insecure_private_key
 IdentitiesOnly yes
 LogLevel FATAL
+
+Host ansible-1
+IdentityFile .vagrant/machines/ansible-1/virtualbox/private_key
+
+Host ansible-2
+IdentityFile .vagrant/machines/ansible-2/virtualbox/private_key
+
+Host ansible-3
+IdentityFile .vagrant/machines/ansible-3/virtualbox/private_key
